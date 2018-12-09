@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
-@app.route('/about/')
+@app.route('/about/', methods=['GET', 'POST'])
 def about():
     return render_template('aboutpage.html')
 
