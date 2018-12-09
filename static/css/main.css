@@ -92,6 +92,14 @@
         width: 350px;
         font-size: 18px;
     }
+    .about-title {
+        font-size: 48px;
+        width: 350px;
+    }
+    .about-subtitle {
+        font-size: 18px;
+        width: 525px;
+    }
     #signup-btn {
         width: 200px;
     }
