@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Anonymouse. Secure. Social.</title>
+    <title>{% block title %}Home{% endblock %} | Anonymouse. Secure. Social.</title>
 
     <!-- Bulma and Fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -14,11 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Work+Sans" rel="stylesheet">
 
     <!-- Page styling -->
-    <link href="static/css/main.css" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/main.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="bg-image">
-    <img src="static/img/app_screen.png">
+    <img src="{{url_for('static',filename='img/app_screen.png')}}">
 </div>
 <section class="section">
     <div class="container">
@@ -31,7 +31,7 @@
             </div>
             <nav class="column">
                 <ul class="is-pulled-right nav uppercase">
-                    <li><a class="light-gray" href="#">home</a></li>
+                    <li><a class="light-gray" href="/">home</a></li>
                     <li><a class="light-gray" href="/about/">about</a></li>
                     <li><a class="light-gray" href="mailto:dickrp@umich.edu">contact</a></li>
                 </ul>
@@ -39,6 +39,8 @@
         </div>
     </div>
 </section>
+
+{% block body %}
 <section class="hero is-white is-medium">
     <div class="container slogan">
         <h1 class="slogan-title dark-gray">
@@ -101,7 +103,7 @@
                 <div class="card">
                     <div class="card-image">
                         <figure class="image">
-                            <img src="static/img/feature_icon3.png"
+                            <img src="{{url_for('static',filename='img/feature_icon3.png')}}"
                                  alt="anonymous">
                         </figure>
                     </div>
@@ -119,6 +121,8 @@
         </div>
     </div>
 </section>
+{% endblock %}
+
 <footer class="footer">
     <div class="container" style="width: 70%">
         <div class="content">
