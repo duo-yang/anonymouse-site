@@ -43,30 +43,34 @@
 </section>
 
 {% block body %}
-<div class = "columns">
-	<div class = "column">
-		<section class="hero is-white is-medium">
-			<div class="container slogan">
-				<h1 class="slogan-title dark-gray">
-					See what's happening around you
-				</h1>
-				<h2 class="slogan-subtitle light-gray">
-					Connect with your local community, meet new people, and learn
-					about
-					events happening around you. <br>
-					Sign up to get an update when we launch our app!
-				</h2>
-				<a id="signup-btn" class="button is-link bg-light-yello uppercase"
-				   href="http://bit.ly/anonymouse-signup" target="_blank">
-					Sign up
-				</a>
+<section class="section">
+	<div class = "container">
+		<div class = "columns is-vcentered is-centered">
+			<div class = "column  is-two-thirds-desktop is-one-third-widescreen">
+				<div class = "hero is-medium">
+					<div class="hero-body">
+						<h1 class="title dark-gray slogan-title">
+							See what's happening around you
+						</h1>
+						<h2 class="subtitle light-gray slogan-subtitle">
+							Connect with your local community, meet new people, and learn
+							about
+							events happening around you. <br>
+							Sign up to get an update when we launch our app!
+						</h2>
+						<a id="signup-btn" class="button is-link bg-light-yello uppercase"
+						   href="http://bit.ly/anonymouse-signup" target="_blank">
+							Sign up
+						</a>
+					</div>
+				</div>
 			</div>
-		</section>
+			<div class = "column is-4">
+				<img src = "{{ url_for('static',filename='img/app_screen-upright.png')}}" class = "image">
+			</div>
+		</div>
 	</div>
-	<div class = "column">
-		<img src = "{{ url_for('static',filename='img/app_screen-upright.png')}}" class = "image">
-	</div>
-</div>
+</section>
 <section id="features">
     <div class="container">
         <div class="columns">
