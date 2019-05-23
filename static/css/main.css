@@ -185,3 +185,9 @@ footer * {
     margin-bottom: 20px;
     display: block;
 }
+
+/*news CSS */
+hr{
+	height:1px;
+	background-color:black;
+}

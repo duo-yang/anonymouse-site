@@ -13,6 +13,9 @@ def about():
 @app.route('/news/',methods=['GET'])
 def news():
 	return render_template('news.html')
+@app.route('/staff/',methods=['GET','POST'])
+def staff():
+	return render_template('staff.html')
 
 
 if __name__ == '__main__':
