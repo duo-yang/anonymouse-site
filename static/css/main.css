@@ -191,3 +191,9 @@ hr{
 	height:1px;
 	background-color:black;
 }
+
+/* staff */
+#professor{
+	background-color:#F2AE00 !important;
+	border-radius:5px;
+}
