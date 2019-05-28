@@ -141,7 +141,7 @@
     max-width: 600px;
 }
 #features {
-    margin-top: 15%;
+    /*margin-top: 15%;*/
 }
 #features .columns {
     margin: 0 10% 0 10%;
@@ -196,4 +196,12 @@ hr{
 #professor{
 	background-color:#F2AE00 !important;
 	border-radius:5px;
+}
+
+.subteam .column i{
+	padding:0.25rem;
+}
+
+.subteam .column h2{
+	font-size:1.5rem;
 }
