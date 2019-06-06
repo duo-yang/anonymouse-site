@@ -29,6 +29,12 @@ handlers:
 - url: .*  # This regex directs all routes to main.app
   script: main.app
 
+- url: /.*
+  script: auto
+  secure: always
+  redirect_http_response_code: 301
+
+
 # Third party libraries that are included in the App Engine SDK must be listed
 # here if you want to use them.  See
 # https://developers.google.com/appengine/docs/python/tools/libraries27 for
