@@ -84,8 +84,46 @@
     </div>
 </section>
 <section class = "section">
-	<div class = "container has-text-centered">
-		<h1 class = "title">More Coming Soon</h1>	
+	<div class = "container">
+		<!--ROW ONE -->
+		<div class = "columns is-centered is-vcentered">
+			<div class = "column is-one-fifth">
+				<figure class = "image">
+					<img src = "{{url_for('static',filename='img/news.png')}}">
+				</figure>
+			</div>
+			<div class = "column is-4">
+				<h1 class = "title">A Comfortable, Familiar Feed</h1>
+				<p class = "subtitle">With Anonymouse, you don't need to learn the nuts and bolts of a new interface. Come feel right at home with features just like any other social media application.</p>
+			</div>
+		</div>
+		<!--ROW TWO -->
+		<div class = "columns is-centered is-vcentered">
+			<div class = "column is-4 has-text-right">
+				<h1 class = "title">A Consistently Fresh, <em>Transitive</em> Feed</h1>
+				<p class = "subtitle">Anonymouse uses its unique transitive transportation mechanism and the network of fellow users surrounding you to construct a feed that never feels stale.</p>
+			</div>
+			<div class = "column is-one-fifth">
+				<figure class = "image">
+					<img src = "{{url_for('static',filename='img/discover.png')}}">
+				</figure>
+			</div>
+		</div>
+		<div class = "has-text-centered">
+			<h1 class = "title">Continuously Vibrant and Topical Discussions</h1>
+			<p class = "subtitle">Anonymouse empowers users to have varied and long disussions over many different topics of their choice.</p>
+		</div>
+		<div class= "columns is-centered">
+			<div class= "column is-one-fifth">
+				<figure class = "image"><img src = "{{url_for('static',filename='img/discussion.png')}}"></figure>
+			</div>
+			<div class= "column is-one-fifth">
+				<figure class = "image"><img src = "{{url_for('static',filename='img/tweet.png')}}"></figure>
+			</div>
+			<div class= "column is-one-fifth">
+				<figure class = "image"><img src = "{{url_for('static',filename='img/search.png')}}"></figure>
+			</div>
+		</div>
 	</div>
 </section>
 {% endblock %}
