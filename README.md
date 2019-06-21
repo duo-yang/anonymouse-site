@@ -18,3 +18,9 @@ The site is built with [Flask](http://flask.pocoo.org/) hosted using [Google App
 
 ## Support
 **Contact: Duo Yang (yangduo@umich.edu)**
+
+### Setup
+1. Clone the repo with `git clone`.
+2. `cd anonymouse-site` and run `python -m venv env` if you're running Python 3.5+.
+3. Run `source env/bin/activate` to activate the virtual environment and `pip install -r requirements.txt` to install required packages.
+4. Run `sh exec.sh` to start the Flask webserver.
