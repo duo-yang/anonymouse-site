@@ -4,7 +4,10 @@ import os
 
 
 app = Flask(__name__)
-if(os.environ['FLASK_ENV']!="development"): Talisman(app)
+try:
+	if(os.environ['FLASK_ENV']!="development"): Talisman(app)
+except:
+	Talisman(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
