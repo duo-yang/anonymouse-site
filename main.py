@@ -1,7 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request,redirect
+from flask_talisman import Talisman
+import os
 
 
 app = Flask(__name__)
+if(os.environ['FLASK_ENV']!="development"): Talisman(app)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
