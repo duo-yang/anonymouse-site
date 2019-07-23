@@ -5,8 +5,13 @@ import os
 
 app = Flask(__name__)
 try:
-	if(os.environ['FLASK_ENV']!="development"): Talisman(app)
+	if(os.environ['FLASK_ENV']!="development"): 
+		#print("prouction")
+		Talisman(app)
+	#else: 
+		#print("development encountered")
 except:
+	#print("could not get flask_env")
 	Talisman(app)
 
 @app.route('/', methods=['GET', 'POST'])
