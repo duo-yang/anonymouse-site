@@ -45,5 +45,3 @@ handlers:
 libraries:
 - name: flask
   version: latest
-- name: talisman
-  version: latest
