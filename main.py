@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request,redirect
-from flask_talisman import Talisman
+from flask_talisman import Talisman,GOOGLE_CSP_POLICY
 import os
 
 
@@ -7,12 +7,12 @@ app = Flask(__name__)
 try:
 	if(os.environ['FLASK_ENV']!="development"): 
 		#print("prouction")
-		Talisman(app)
+		Talisman(app,content_security_policy=GOOGLE_CSP_POLICY)
 	#else: 
 		#print("development encountered")
 except:
 	#print("could not get flask_env")
-	Talisman(app)
+	Talisman(app,content_security_policy=GOOGLE_CSP_POLICY)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
