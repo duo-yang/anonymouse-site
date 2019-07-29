@@ -4,15 +4,16 @@ import os
 
 
 app = Flask(__name__)
+csp={'default-src':['\'self\'','*.cdnjs.cloudflare.com','*.use.fontawesome.com','*.googletagmanager.com']}
 try:
 	if(os.environ['FLASK_ENV']!="development"): 
 		#print("prouction")
-		Talisman(app,content_security_policy=GOOGLE_CSP_POLICY)
+		Talisman(app,content_security_policy=csp)
 	#else: 
 		#print("development encountered")
 except:
 	#print("could not get flask_env")
-	Talisman(app,content_security_policy=GOOGLE_CSP_POLICY)
+	Talisman(app,content_security_policy=csp)
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
