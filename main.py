@@ -4,7 +4,7 @@ import os
 
 
 app = Flask(__name__)
-csp={'default-src':['\'self\'','*.cdnjs.cloudflare.com/*','*.use.fontawesome.com/*','*.googletagmanager.com/*']}
+csp={'default-src':['\'self\'','https://*']}
 try:
 	if(os.environ['FLASK_ENV']!="development"): 
 		#print("prouction")
