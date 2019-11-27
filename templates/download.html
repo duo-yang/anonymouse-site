@@ -1,0 +1,22 @@
+{% extends 'index.html' %}
+{% block ttile %}Downloads{% endblock %}
+{% block body %}
+<div class = "hero is-white">
+	<div class = "hero-body">
+		<div class = "container">
+			<h1 class = "slogan-title dark-gray">Downloads</h1>		
+			<h2 class="slogan-subtitle light-gray">Download Anonymouse's app here</h2>
+		</div>
+	</div>
+</div>
+<section class="section">
+	<div class = "container">
+		<h1 class = "title">Alpha Release Download</h1>
+		<p class = "subtitle">November 27th, 2019</p>
+		<p>The <code>.apk</code> is now available for download <a href = "{{url_for('static',filename='app-release.apk')}}">here</a>! The below instructions will help for installing the app:</p>
+	</div>
+</section>
+
+
+{% endblock %}
+
