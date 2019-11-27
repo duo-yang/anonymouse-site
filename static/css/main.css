@@ -210,3 +210,19 @@ hr{
 .padding-two{
 	padding:2rem;
 }
+
+/*DOWNLOAD PAGE*/
+.download_button{
+	background-color:#F2AE00; 
+	color:black; 
+	padding:1rem;
+}
+.download_button:hover{
+	text-decoration: underline;
+}
+.download_button:active{
+	text-decoration: underline;
+}
+.mt-1{
+	margin-top:1rem;
+}
