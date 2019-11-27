@@ -19,6 +19,8 @@
 
     <!-- Page styling -->
     <link href="{{ url_for('static',filename='css/main.css') }}" rel="stylesheet">
+	{% block style %}
+	{% endblock %}
 </head>
 <body>
 <section class="section">
@@ -37,6 +39,8 @@
                     <li><a class="light-gray" href="/staff/">staff</a></li>
                     <li><a class="light-gray" href="http://bit.ly/anonymouse-signup" target="_blank">contact</a></li>
 <!--                    <li><a class="light-gray" href="/news">news</a></li> -->
+
+                    <li><a class="light-gray" href="/downloads/">downloads</a></li>
                 </ul>
             </nav>
         </div>

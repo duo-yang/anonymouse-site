@@ -1,5 +1,20 @@
 {% extends 'index.html' %}
-{% block ttile %}Downloads{% endblock %}
+{% block title %}Downloads{% endblock %}
+{% block style %}
+	<style>
+	.download_button{
+		background-color:#F2AE00; 
+		color:black; 
+		padding:1rem;
+	}
+	.download_button:hover{
+		text-decoration: underline;
+	}
+	.download_button:active{
+		text-decoration: underline;
+	}
+	</style>
+{% endblock %}
 {% block body %}
 <div class = "hero is-white">
 	<div class = "hero-body">
@@ -13,7 +28,12 @@
 	<div class = "container">
 		<h1 class = "title">Alpha Release Download</h1>
 		<p class = "subtitle">November 27th, 2019</p>
-		<p>The <code>.apk</code> is now available for download <a href = "{{url_for('static',filename='app-release.apk')}}">here</a>! The below instructions will help for installing the app:</p>
+		<p>The <code>.apk</code> is now available for download! The below instructions will help for installing the app:</p>
+		<div class = "columns is-centered" style = "margin-top:1rem;">
+			<div class = "column is-one-quarter has-text-centered">
+				<a href = "{{url_for('static',filename='app-release.apk')}}" target = "_blank"><h1 class = "title download_button" style = "">Download Link</h1></a>
+			</div>
+		<div>
 	</div>
 </section>
 
